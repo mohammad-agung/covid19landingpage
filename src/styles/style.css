@@ -21,6 +21,29 @@ body {
 }
 
 /* component */
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animated {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+/* navigasi */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 0;
+    background-color: #233B48;
+}
+
+.bg-shadow {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
+}
+
 .button {
     padding: 10px 40px;
     font-size: 16px;
@@ -244,25 +267,6 @@ main {
     .button {
         color: #fff;
         border-radius: 200px;
-    }
-
-    .fadeInDown {
-        animation-name: fadeInDown;
-    }
-
-    .animated {
-        animation-duration: .5s;
-        animation-fill-mode: both;
-    }
-
-    /* navigasi */
-    .navbar-fixed {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-        padding: 10px 0;
-        background-color: #233B48;
     }
 
     .navbar-brand {
