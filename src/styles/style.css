@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Sriracha&display=swap');
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* component */
+.button {
+    padding: 10px 40px;
+    font-size: 16px;
+}
+
+.bg-jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.corona {
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+}
+
+.bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.bullet.cases {
+    background-color: rgb(190, 190, 34);
+}
+
+.bullet.deaths {
+    background-color: rgb(202, 42, 42);
+}
+
+.bullet.recovered {
+    background-color: rgb(45, 177, 45);
+}
+
+.bullet.active {
+    background-color: rgb(41, 182, 182);
+}
+
+.bg-confirmed {
+    width: 100%;
+    border: 1px solid rgb(190, 190, 34);
+}
+
+.bg-death {
+    width: 100%;
+    border: 1px solid rgb(202, 42, 42);
+}
+
+.bg-recovered {
+    width: 100%;
+    border: 1px solid rgb(45, 177, 45);
+}
+
+.bg-active {
+    width: 100%;
+    border: 1px solid rgb(41, 182, 182);
+}
+
+
+/* navigasi */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Sriracha', cursive;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-item .button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* jumbotron */
+.jumbotron {
+    color: #efefef;
+    padding-bottom: 80px;
+}
+
+.jumbotron .text-jumbotron {
+    margin: 80px 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+
+.jumbotron .text-jumbotron .display-4 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.jumbotron .text-jumbotron p.lead {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.jumbotron .text-jumbotron p.lead-two {
+    font-size: .8em;
+    margin-bottom: 30px;
+}
+
+.text-jumbotron .button {
+    color: #fff;
+}
+
+.jumbotron img {
+    width: 80%;
+    display: block;
+    margin: 80px auto;
+}
+
+/* main */
+main {
+    margin-bottom: 40px;
+}
+
+/* info-panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    margin-top: -100px;
+    border-radius: 12px;
+    padding: 38px;
+}
+
+.card {
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.card .card-text {
+    font-size: 1.1em;
+    font-family: 'Sriracha', cursive;
+}
+
+/* about corona */
+.about-corona {
+    margin: 40px 5px;
+}
+
+.about-corona img {
+    width: 100%;
+}
+
+.about-corona h3 {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-corona p {
+    font-size: 14px;
+    font-weight: 200;
+    color: #ACACAC;
+    margin: 20px 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
+
+.about-corona p a {
+    margin-top: 8px;
+}
+
+/* tabel */
+.table-data {
+    margin-top: 40px;
+}
+
+.table-data .head-table h3 {
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* responsive */
+@media (min-width:992px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .button {
+        color: #fff;
+        border-radius: 200px;
+    }
+
+    .fadeInDown {
+        animation-name: fadeInDown;
+    }
+
+    .animated {
+        animation-duration: .5s;
+        animation-fill-mode: both;
+    }
+
+    /* navigasi */
+    .navbar-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 10px 0;
+        background-color: #233B48;
+    }
+
+    .navbar-brand {
+        font-size: 32px;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+    }
+
+    .nav-link {
+        margin-top: 0;
+        margin-right: 40px;
+        letter-spacing: 0.1rem;
+        transition: all .2s;
+    }
+
+    .nav-item:hover .nav-link {
+        color: cyan;
+        text-shadow: -1px 1px 10px cyan, 1px 1px 10px cyan;
+    }
+
+    .nav-link::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0ba792;
+        width: 0;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        transition: .2s;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        width: 50%;
+    }
+
+    .nav-item .button {
+        margin-top: 0;
+    }
+
+    /* jumbotron */
+    .jumbotron {
+        background: none;
+    }
+
+    .jumbotron .text-jumbotron .display-4 {
+        font-size: 5em;
+        letter-spacing: 10px;
+    }
+
+    .jumbotron .text-jumbotron p.lead {
+        font-size: 1.6em;
+    }
+
+    .jumbotron .text-jumbotron p.lead-two {
+        font-size: 1.2em;
+    }
+
+    /* info panel */
+    .card {
+        margin-bottom: 0;
+    }
+
+    /* about corona */
+    .about-corona h3 {
+        margin-top: 80px;
+    }
+
+    .about-corona p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .jumbotron {
+        padding-bottom: 60px;
+    }
+
+    .jumbotron .text-jumbotron {
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+    }
+
+    .jumbotron img {
+        margin: 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .jumbotron {
+        padding-bottom: 120px;
+    }
+
+    .jumbotron .images {
+        order: 1;
+    }
+
+    .jumbotron .text-jumbotron {
+        order: 2;
+        margin: 0 10px;
+        text-align: justify;
+    }
+
+    .jumbotron .text-jumbotron .display-4 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron .text-jumbotron p.lead,
+    .text-jumbotron .button {
+        font-size: 14px;
+    }
+
+    .jumbotron .text-jumbotron p.lead-two {
+        font-size: 12px;
+    }
+
+    .text-jumbotron .button {
+        width: 100%;
+    }
+
+    /* about-corona */
+    .about-corona h3 {
+        font-size: 26px;
+    }
+
+    /* table-info */
+    .dataTables_info {
+        margin-bottom: 10px;
+    }
+}
+
+/* animasi */
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

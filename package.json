@@ -4,7 +4,8 @@
   "description": "landing page covid 19 tracker live data update with API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "mohchaesarbudiagung",
   "license": "ISC",

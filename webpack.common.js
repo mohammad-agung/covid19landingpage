@@ -17,22 +17,12 @@ module.exports = {
                 use: ["html-loader"],
             },
             {
-                test: /\.(png|jpg|svg)$/,
+                test: /\.(png|jpg|svg|jpeg|ico)$/,
                 use: [{
                     loader: "file-loader",
                     options: {
                         name: "[name].[hash].[ext]",
                         outputPath: "assets/images"
-                    }
-                }]
-            },
-            {
-                test: /\.(svg|eot|ttf)$/,
-                use: [{
-                    loader: "file-loader",
-                    options: {
-                        name: "[name].[ext]",
-                        outputPath: "assets/fonts"
                     }
                 }]
             }
