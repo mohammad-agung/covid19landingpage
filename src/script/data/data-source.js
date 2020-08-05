@@ -78,7 +78,7 @@ function dataSource() {
             <div class="card bg-active">
                 <div class="card-body">
                     <h5 class="card-title">Total Active</h5>
-                    <p class="card-text"><span class="bullet active"></span><strong>${data.todayCases.toLocaleString()}</strong></p>
+                    <p class="card-text"><span class="bullet active"></span><strong>${data.active.toLocaleString()}</strong></p>
                 </div>
             </div>
         </div>`);
